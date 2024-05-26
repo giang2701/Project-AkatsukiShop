@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+    h2{
+        margin-left: 200px;
+    } 
+
+    .thanhtoan{
+        margin-left: 150px;
+    }
+    .edit-btn, .delete-btn {
+            padding: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+    }
+    product-img {
+         max-width: 50px; /* Set the maximum width of the product image */
+         margin-right: 10px; /* Add some space between the image and text */
+    }
+    </style>
+</head>
+<body>
+    <div class="container_dathang">
+        <section class="navigation">
+            <span> <img src="img/1-icon-3.jpg" alt="" width="30px" height="30px">Giỏ hàng ></span>
+            <span><img src="img/th.jpg" alt="" width="25px" height="25px">Thông tin thanh toán ></span>
+            <span><img src="img/th (1).jpg" alt=""  width="30px" height="30px">Hòa tất đặt hàng</span>
+        </section>
+             <h2>Đơn Hàng Của Bạn</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="product-img" src="img/Vegeta.jpg" alt="ACE" width="50px" height="50px">
+                        Vegeta
+                    </td>
+                    <td>$25</td>
+                    <td>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                    </td>
+                    <td>$25</td>
+                    <td>
+                        <span class="edit-btn" onclick="editOrder(this)">Sửa</span>
+                        <span class="delete-btn" onclick="deleteOrder(this)">Xóa</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="product-img" src="img/Zoro.png" alt="ACE" width="50px" height="50px">
+                        ZORO
+                    </td>
+                    <td>$40</td>
+                    <td>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                    </td>
+                    <td>$40</td>
+                    <td>
+                        <span class="edit-btn" onclick="editOrder(this)">Sửa</span>
+                        <span class="delete-btn" onclick="deleteOrder(this)">Xóa</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="thanhtoan">Tiến hành thanh toán</button>
+    </div>
+</body>
+</html>

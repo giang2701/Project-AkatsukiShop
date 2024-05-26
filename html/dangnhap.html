@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+ 
+.container_login{
+    background-color: rgb(232, 190, 140);
+    
+    padding: 20px;
+    height: 1200px;
+}
+.dangnhaptaikhoan {
+    text-align: center;
+    color: #333;
+    margin-left: 150px;
+}
+.formdangnhap {
+  
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 550px;
+    width: 400px;
+    height: 300px;
+  
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #CCFFFF;
+    border-radius: 4px;
+}
+
+
+.dangnhaptk {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+.quenmatkhau {
+    text-decoration: none;
+    color: #3300ff;
+    display: block;
+    margin-top: 20px;
+}
+
+
+.chuyentrangdk {
+    text-decoration: none;
+    color: #3300ff;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container_login">
+        <h1 class="dangnhaptaikhoan">Đăng nhập tài khoản</h1>
+        <form action="#" method="post" class="formdangnhap" onsubmit="return checkLogin()">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="dangnhaptk">Đăng nhập</button>
+            <br><a href="" class="quenmatkhau">Quên mật khẩu ?</a>
+            <p>Bạn đã có tài khoản? <a href="dangki.html" class="chuyentrangdk">Đăng kí</a></p>
+          
+        </form>
+    </div>
+    
+</body>
+</html>
+
+</html>

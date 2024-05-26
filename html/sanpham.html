@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm </title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/509cc166d7.js" crossorigin="anonymous"></script>
+    <!-- <style>   
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked){
+          position: absolute;
+          visibility: hidden;
+        }
+        .desc-btn:checked + label,
+        .desc-btn:not(:checked) + label{
+          position: relative;
+          transition: all 200ms linear;
+          display: inline-block;
+          border: none;
+          cursor: pointer;
+          color: #ffeba7;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 1.2;
+          color: #000000;
+          margin-right: 25px;
+          opacity: 0.5;
+        }
+        .desc-btn:checked + label{
+          opacity: 1;
+        }
+        .desc-btn:not(:checked) + label:hover {
+          opacity: 0.8;
+        }
+        
+        .desc-sec {
+          padding-top: 60px;
+          padding-bottom: 30px;
+          transition: all 250ms linear;
+          opacity: 0;
+          overflow: hidden;
+          pointer-events: none;
+          transform: translateY(20px);
+          height: 1100px;
+        }
+        .desc-sec.accor-2 {
+          position: absolute;
+          top: 410px;
+          left: 20;
+          width: 100%;
+          z-index: 2;
+        }
+        .desc-sec.accor-3 {
+          position: absolute;
+          top: 410px;
+          left: 20;
+          width: 100%;
+          z-index: 2;
+        }
+        #desc-1:checked ~ .desc-sec.accor-1 {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+        #desc-2:checked ~ .desc-sec.accor-2 {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+        #desc-3:checked ~ .desc-sec.accor-3 {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+        .section-inline{
+          position: relative;
+          display: inline-block;
+          margin-right: 20px;
+        }
+        .section-inline p span{
+          font-size: 30px;
+          line-height: 1.1;
+        }
+        
+        /*  */
+        /*  */
+        /*  */
+        
+        /*  */
+        
+        .box_container{
+            margin-left: 50px;
+        }
+    </style> -->
+</head>
+<body>
+    <!---------------------------------HEADER---------------------------------------------------->
+    <header>
+        <section class="sub_header">
+            <article class="mail">
+                <i class="fa-solid fa-envelope" style="font-size: 20px;"></i>
+                <span style="font-size: 17px; ">ShopAkuttshi27@gmail.com</span>
+            </article>
+            <article class="contact">
+                <div class="icon_contact">
+                    <a href=""><img src="icon/facebook.svg" alt="" height="30px" width="30px"></a>
+                    <a href="https://twitter.com/Shop_Akuttshi"><img src="icon/twitter.svg" alt="" height="30px" width="30px"></a>
+                    <a href=""><img src="icon/facebook-messenger.1.svg" alt="" height="30px" width="30px"></a>
+                </div>
+                <div class="button_header" style="border-left: 2px solid black;"><a href="">Đăng Nhập</a></div>
+            </article>
+        </section>
+        <section class="body_header">
+            <div class="img_body_header">
+                <img src="img/logo.jpg" alt="" >
+            </div>
+            <div class="search">
+                <input type="text" name="name" id="" placeholder="Search......">
+                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i></a>
+            </div>
+            <div class="cart">
+                <a href=""><i class="fa-solid fa-cart-shopping" style="font-size: 40px; color: white;"></i></a>
+                <a href=""><span style="font-weight: bold; font-size: 30px; color: white;">Cart</span></a>
+            </div>
+        </section>
+        <section class="menu">
+            <article class="menu_colum">
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <img src="icon/menu-1.2.svg" alt="" height="30px" width="30px">
+                    <span>Danh mục sản phẩm</span>
+                    <div class="dropdown-content">
+                      <a href="#">Mô hình Anime</a>
+                      <a href="#">Tranh canvas Anime</a>
+                      <a href="#">Set Decal Dán Tường Anime</a>
+                    </div>
+                  </div>
+            </article>
+            <article class="menu_row">
+                <ul>
+                    <li><a href="">Trang chủ </a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Giới thiệu </a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+84 385137427</span><br>
+                        <p>Hỗ Trợ 24/7 </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </header>
+    <!---------------------------------MAIN------------------------------------------------------>
+    <main>
+        <section class="navigation">
+            <span>Trang chủ /</span>
+            <span>Mô hình Anime /</span>
+        </section>  
+        <section class="box_container">
+            <div class="section-fluid">
+                <!-- <div class="Dieukhien"> -->
+                <input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked/>
+                <label for="desc-1" style="font-size: 35px; color: red;">One Piece</label> 
+                <input class="desc-btn" type="radio" id="desc-2" name="desc-btn"/>
+                <label for="desc-2" style="font-size: 35px; color: red;">Dragon ball</label> 
+                <input class="desc-btn" type="radio" id="desc-3" name="desc-btn"/>
+                <label for="desc-3" style="font-size: 35px; color: red;">Naruto</label>
+                <!-- </div> -->
+                <div class="section-fluid desc-sec accor-1">
+                    <article class="Sub_content">
+                        <!-- mô hình 1 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_Mũ_rơm.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Nhân Vật One Piece 02</h3>
+                            <h2>95.000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 2 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_nhóm_mũ_rơm.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Nhân Vật One Piece 03</h3>
+                            <h2>95.000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 3 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_zoro.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Zoro(Vua địa ngục)</h3>
+                            <h2>95,000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 4 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_sanji.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Sanji(chân đen)</h3>
+                            <h2>95,000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>	
+                <div class="section-fluid desc-sec accor-2">
+                    <section class="Content">
+                        <article class="title_box">
+                            <div class="box_1"></div>
+                            <div class="box_2">
+                                <p>Tranh Canvas</p>
+                            </div>
+                            <div class="box_1"></div>
+                        </article>
+                        
+                        <article class="Sub_content">
+                            <!-- mô hình 1 -->
+                            <div class="object">
+                                <a href=""><img src="img/canvar_doflamingo.jpg" alt="" height="350px" width="250px"></a>
+                                <p>Tranh Canvar Anime</p>
+                                <h3>Combo 2 Tranh Treo Tường Dofflamingo Vs Rosinante</h3>
+                                <h2>495.000 Đ</h2>
+                                <div class="add_cart">
+                                    <div class="sub_add_cart">
+                                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                        <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mô hình 2 -->
+                            <div class="object">
+                                <a href=""><img src="img/canvar_luffy.jpg" alt="" height="350px" width="250px"></a>
+                                <p>Tranh Canvar Anime</p>
+                                <h3>Tranh treo tường luffy lễ hội lửa wano</h3>
+                                <h2>495,000 Đ</h2>
+                                <div class="add_cart">
+                                    <div class="sub_add_cart">
+                                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                        <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mô hình 3 -->
+                            <div class="object">
+                                <a href=""><img src="img/canvar_luffy_or_usopp.jpg" alt="" height="350px" width="250px"></a>
+                                <p>Tranh Canvar Anime</p>
+                                <h3>Combo 2 Tranh Treo Tường Luffy Vs Usopp</h3>
+                                <h2>495,000 Đ</h2>
+                                <div class="add_cart">
+                                    <div class="sub_add_cart">
+                                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                        <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mô hình 4 -->
+                            <div class="object">
+                                <a href=""><img src="img/canvar_zoro.jpg" alt="" height="350px" width="250px"></a>
+                                <p>Tranh Canvar Anime</p>
+                                <h3>Combo 2 Tranh Treo Tường Anime Zoro</h3>
+                                <h2>495,000 Đ</h2>
+                                <div class="add_cart">
+                                    <div class="sub_add_cart">
+                                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                        <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mô hình 5 -->
+                            <div class="object">
+                                <a href=""><img src="img/Canvas_luffy_or_law.jpg" alt="" height="350px" width="250px"></a>
+                                <p>Tranh Canvar Anime</p>
+                                <h3>Combo 2 Tranh Treo Tường Anime Luffy Vs Law</h3>
+                                <h2>495,000 Đ</h2>
+                                <div class="add_cart">
+                                    <div class="sub_add_cart">
+                                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                        <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="see_more">
+                            <p><a href="">Xem thêm</a></p>    
+                        </article>
+                    </section>
+                </div>	
+                <div class="section-fluid desc-sec accor-3">
+                    <article class="Sub_content">
+                        <!-- mô hình 1 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_Mũ_rơm.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Nhân Vật One Piece 02</h3>
+                            <h2>95.000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 2 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_nhóm_mũ_rơm.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Nhân Vật One Piece 03</h3>
+                            <h2>95.000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 3 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_zoro.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Zoro(Vua địa ngục)</h3>
+                            <h2>95,000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mô hình 4 -->
+                        <div class="object">
+                            <a href=""><img src="img/Decal_sanji.png" alt="" height="350px" width="250px"></a>
+                            <p>Decal Dán Tường</p>
+                            <h3>Decal Dán Tường Sanji(chân đen)</h3>
+                            <h2>95,000 Đ</h2>
+                            <div class="add_cart">
+                                <div class="sub_add_cart">
+                                    <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                                    <a href="" style="text-decoration: none; font-size: 20px; color: white;">Thêm vào Giỏ hàng </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>	
+        </section>
+    </main>
+    <!---------------------------------FOOTER---------------------------------------------------->
+    <!-- code nút gọi dán vào web. Thường là footer -->
+	<div class="fix_tel">
+        <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 150px; bottom: -12px;">
+        <div class="ring-alo-ph-circle"></div>
+        <div class="ring-alo-ph-circle-fill"></div>
+        <div class="ring-alo-ph-img-circle">
+        <a href="https://www.facebook.com/profile.php?id=100095392924455"><i class="fa-brands fa-facebook-messenger" style="font-size: 30px; color: white;"></i></a>
+        </div>
+        </div>
+        <div class="tel">
+        <!-- <a href="tel:0903172969"><p class="fone">Liên hệ với chúng tôi</p></a> -->
+        </div>
+    </div>
+    <footer class="footer_container">
+        <section class="footer_colum1">
+            <img src="img/logo.jpg" alt="">
+            <p>FPT Phổ Trịnh Văn Bộ, Xuân Phương.<br> Nam Từ Liêm, Hà Nội.</p>
+            <p>+84 385137427</p>
+            <p>ShopAkuttshi27@gmail.com</p>
+        </section>
+        <section class="footer_colum2">
+            <h2>Liên kết Hữu ích</h2>
+            <a href=""><p>Về chúng tôi</p></a>
+            <a href=""><p>Chính sách đổi trả</p></a>
+        </section>
+        <section class="footer_colum3">
+            <h2>Kết nối với mô hình</h2>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Shop_Akuttshi"><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+            <img src="img/img_banner/banner_3.png" alt="" height="100px" width="300px">
+        </section>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
